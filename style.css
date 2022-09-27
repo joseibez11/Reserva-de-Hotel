@@ -1,0 +1,59 @@
+body * {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 2px;
+}
+
+header{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    background: rgb(127, 173, 189);
+    padding: 10px;
+    color: white;
+}
+
+.tabla_habitaciones{
+    position: relative;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+table {
+    margin: 15px 15px;
+}
+
+td {
+    border: 2px solid rgb(11, 85, 79);
+    text-align: center;
+    padding: 2px 2px;
+}
+
+
+.tabla_cliente, .tabla_mensajes{
+    position: relative;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.titulos {
+    font-weight: bold;
+    font-size: 20px;
+    background: rgb(247, 245, 180);
+    padding: 5px;
+}
+
+.botones {
+    width: 100px;
+    height: 25px;
+    color: blanchedalmond;
+    background: rgb(65, 65, 121);
+    transition: 500ms;
+    border: 0px;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.botones:hover{
+    background-color: rgb(70, 243, 243);
+    box-shadow: 1px 1px 20px 1px rgb(214, 247, 137);
+}

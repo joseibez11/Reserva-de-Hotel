@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Reto 2 - MisiónTic</title>
+</head>
+
+<body>
+    <header>
+        <h1>✯RESERVA EN HOTEL✯</h1>
+    </header>
+
+    <section class=tabla_habitaciones>
+        <p class="titulos">Habitaciones</p>
+        <div id="resultadoRoom">
+            <button onclick="traerInformacionRoom()" class="botones"> Consultar </button>
+        </div>
+
+        <div>
+            <input type="number" id="id" placeholder="id">
+            <input type="text" id="room" placeholder="habitación">
+            <input type="text" id="stars" placeholder="estrellas">
+            <input type="number" id="category_id" placeholder="categoría de id">
+            <input type="text" id="description" placeholder="descripción">
+        </div>
+        <div>
+            <button onclick="guardarInformacionRoom()" class="botones"> Guardar </button>
+            <button onclick="editarInformacionRoom()" class="botones"> Actualizar </button>
+        </div>
+    </section>
+
+    <section class="tabla_cliente">
+        <p class="titulos">Clientes</p>
+        <div id="resultado">
+            <button onclick="traerInformacionC()" class="botones"> Consultar </button>
+        </div>
+
+        <div>
+            <input type="number" id="idCliente" placeholder="id">
+            <input type="text" id="nameCliente" placeholder="nombre">
+            <input type="email" id="emailCliente" placeholder="correo electrónico">
+            <input type="number" id="ageCliente" placeholder="edad">
+        </div>
+        <div>
+            <button onclick="guardarInformacionC()" class="botones"> Guardar </button>
+            <button onclick="editarInformacionC()" class="botones"> Actualizar </button>
+        </div>
+    </section>
+
+
+    <section class="tabla_mensajes">
+        <p class="titulos">Mensajes</p>
+        <div id="resultadoMSG">
+            <button onclick="traerInformacionM()" class="botones"> Consultar </button>
+        </div>
+
+        <div>
+            <input type="number" id="idMensaje" placeholder="id">
+            <input type="text" id="messagetextMensaje" placeholder="mensaje">
+        </div>
+
+        <div>
+            <button onclick="guardarInformacionM()" class="botones"> Guardar </button>
+            <button onclick="editarInformacionM()" class="botones"> Actualizar </button>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
